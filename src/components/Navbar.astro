@@ -1,0 +1,101 @@
+<header class="fixed w-full shadow-md shadow-black-500/50 z-10 bg-white">
+    <nav
+        class="flex items-center justify-between max-w-[1200px] w-[90%] mx-auto py-2"
+    >
+        <a href="/">
+            <img src="/public/logo.png" width="200px" alt="" />
+        </a>
+        <button class="md:hidden" id="abrir">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-menu-2"
+                width="44"
+                height="44"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M4 6l16 0"></path>
+                <path d="M4 12l16 0"></path>
+                <path d="M4 18l16 0"></path>
+            </svg>
+        </button>
+
+        <ul class="[&>li>a]:text-black [&>li>a]:font-bold  gap-5 hidden md:flex">
+            <li>
+                <a class="hover:text-main transition-colors" href="/">Inicio</a>
+            </li>
+            <li>
+                <a class="hover:text-main transition-colors" href="/menu"
+                    >Menu</a
+                >
+            </li>
+            <li>
+                <a class="hover:text-main transition-colors" href="/about"
+                    >Quienes somos</a
+                >
+            </li>
+            <li>
+                <a class="hover:text-main transition-colors" href="#"
+                    >Visitanos</a
+                >
+            </li>
+        </ul>
+    </nav>
+</header>
+<nav
+    id="nav"
+    class="fixed top-0 right-0 h-full shadow-lg border-l invisible border-gray-400 text-center bg-white p-6 w-full z-40"
+>
+    <div class="absolute top-0 right-0 px-6 py-6">
+        <button id="cerrar">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-x"
+                width="34"
+                height="34"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#ff2825"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M18 6l-12 12"></path>
+                <path d="M6 6l12 12"></path>
+            </svg>
+        </button>
+    </div>
+
+    <ul
+        class="[&>li>a]:text-black [&>li>a]:font-bold [&>a>li>p]:text-xl flex flex-col gap-8 mt-20"
+    >
+        <a class="hover:text-white transition-colors" href="/">
+            <li class="hover:bg-main font-bold px-4 py-2 rounded-lg">
+                <p>Inicio</p>
+            </li>
+        </a>
+
+        <a class="hover:text-white transition-colors" href="/menu">
+            <li class="hover:bg-main font-bold px-4 py-2 rounded-lg">
+                <p>Menu</p>
+            </li>
+        </a>
+        <a class="hover:text-white transition-colors" href="/about">
+            <li class="hover:bg-main font-bold px-4 py-2 rounded-lg">
+                <p>Quienes somos</p>
+            </li>
+        </a>
+        
+        <a class="hover:text-white transition-colors" href="about">
+            <li class="hover:bg-main font-bold px-4 py-2 rounded-lg">
+                <p>Visitanos</p>
+            </li>
+        </a>
+    </ul>
+</nav>

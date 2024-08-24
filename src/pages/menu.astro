@@ -1,0 +1,62 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Ramen from "../components/sections/menu/ramen.astro";
+import Sushi from "../components/sections/menu/sushi.astro";
+
+
+---
+
+
+<Layout title="Menu">
+    
+    <section class="pt-16">
+        <div
+            class="flex py-10 justify-center items-center gap-4 [&>button]:text-main [&>button]:font-bold [&>button]:shadow-gray-400"
+        >
+            <button
+                id="ramen-btn"
+                class="w-24 px-4 py-2 border border-main hover:bg-main hover:text-white"
+                onclick="showSection('ramen-menu')"
+                >Ramen
+            </button>
+            <button
+                id="sushi-btn"
+                class="w-24 px-4 py-2 border border-main hover:bg-main hover:text-white"
+                onclick="showSection('sushi-menu')"
+                >Sushi
+            </button>
+            <button
+                id="drinks-btn"
+                class="w-24 px-4 py-2 border border-main hover:bg-main hover:text-white"
+                onclick="showSection('drinks-menu')"
+                >Bebidas
+            </button>
+            <button
+                id="share-btn"
+                class="w-24 px-4 py-2 border border-main hover:bg-main hover:text-white"
+                onclick="showSection('share-menu')"
+                >Compartir
+            </button>
+        </div>
+
+        <!-- Secciones de los platos -->
+        <div class="max-w-[1200px] w-[90%] mx-auto gap-4 fade-in">
+            <div id="ramen-menu" class="menu-section grid grid-cols-1 md:grid-cols-4">
+                <Ramen />
+            </div>
+            <div id="sushi-menu" class="menu-section hidden grid grid-cols-1 md:grid-cols-4">
+                <Sushi />
+            </div>
+            <div id="drinks-menu" class="menu-section hidden grid grid-cols-1 md:grid-cols-4">
+                <!-- Componente de Bebidas -->
+            </div>
+            <div id="share-menu" class="menu-section hidden grid grid-cols-1 md:grid-cols-4">
+                <!-- Componente de Compartir -->
+            </div>
+        </div>
+    </section>
+    <script>
+        
+    </script>
+   
+</Layout>
