@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
 import { ViewTransitions } from "astro:transitions";
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -11,41 +11,38 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-		
-	</head>
-	<body class="">
-		<main>
-			<Navbar />
-			<slot />
-			<Footer />
-			<script src="/src/js/script.js"></script>
-		</main>
-		
-       
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/public/logo-ico.png" />
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="">
+    <main>
+      <Navbar />
+      <slot />
+      <Footer />
+      <script src="/src/js/script.js"></script>
+    </main>
+  </body>
 </html>
 <style is:global>
-	html {
-		font-family: system-ui, sans-serif;
-	}
+  html {
+    font-family: system-ui, sans-serif;
+  }
 
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
+  code {
+    font-family:
+      Menlo,
+      Monaco,
+      Lucida Console,
+      Liberation Mono,
+      DejaVu Sans Mono,
+      Bitstream Vera Sans Mono,
+      Courier New,
+      monospace;
+  }
 </style>

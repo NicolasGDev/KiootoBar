@@ -1,24 +1,28 @@
-<div
-    class="relative flex w-full max-w-xs flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-md"
->
-    <a class="relative mx-3 mt-3 flex h-60 overflow-hidden rounded-xl" href="#">
-        <img
-            class="object-cover"
-            src="/public/Gastronomía-Japonesa.jpeg"
-            alt="product image"
-        />
-    </a>
-    <div class="mt-4 px-5 pb-5">
-        <a href="#">
-            <h5 class="text-xl tracking-tight text-slate-900">
-                Nike Air MX Super 2500 - Red
-            </h5>
-        </a>
-        <div class="mt-2 mb-5 flex items-center justify-between">
-            <p>
-                <span class="text-3xl font-bold text-slate-900">$20.000</span>
-            </p>
-        </div>
-    </div>
-</div>
+---
+import Card from "./Cards.astro";
+---
 
+<Card
+  imageSrc="/public/menu/sushi/sushi-empanizado.png"
+  title="Sushi empanizado"
+  price="$18.900"
+  description="Sushi con la masa apanada, relleno de verduras, excelente opcion vegana, 5 unidades"
+/>
+<Card
+  imageSrc="/public/menu/sushi/sushi-maki.png"
+  title="Sushi maki"
+  price="$25.000"
+  description="Rollo de alga nori relleno de arroz y salmón, mariscos y frutas como el mango, 10 unidades."
+/>
+<Card
+  imageSrc="/public/menu/sushi/bandeja.png"
+  title="Sushi familiar"
+  price="$65.900"
+  description="Gran mix de distintos tipos de sushi, excelente opción para compartir en familia y amigos"
+/>
+<Card
+  imageSrc="/public/menu/sushi/sushi-plato.png"
+  title="Sushi hosomaki"
+  price="$30.000"
+  description="Un plato con 10 unidades de sushi, 5 rollos de salmon y una porción de puré de papa"
+/>

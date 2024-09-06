@@ -2,58 +2,54 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="ca">
-    <section class="md:flex pt-16 max-w-[1200px] w-[90%] mx-auto">
-        <div
-            class="text-center md:w-6/12 flex flex-col py-10 items-center justify-center"
-        >
-            <div
-                class="md:max-w-xl fade-in px-6 text-start flex flex-col gap-6"
-            >
-                <h2 class="text-3xl text-main font-bold">¿Que es Kioto-bar?</h2>
-                <p class="text-2xl">
-                    Somos un restaurante-bar dedicado a la comida y bebida
-                    tradicional Japonesa, contamos con una gran oferta
-                    gastronomica de alta calidad, ademas de ofrecer una gran <span
-                        class="text-main">ambientacion</span
-                    >
-                    contamos con divertidas actividades y dinamicas en las que puedes
-                    participar
-                </p>
-            </div>
+<Layout title="¿Quienes somos?">
+  <section class="md:flex pt-16 max-w-[1200px] w-[90%] mx-auto">
+    <article
+      class="text-center md:w-6/12 flex flex-col py-10 items-center justify-center"
+    >
+      <div class="md:max-w-xl fade-in px-6 text-start flex flex-col gap-6">
+        <h2 class="text-3xl text-main font-bold">¿Que es Kioto-bar?</h2>
+        <p class="text-2xl">
+          Somos un restaurante-bar dedicado a la comida y bebida tradicional
+          Japonesa, contamos con una gran oferta gastronomica de alta calidad,
+          ademas de ofrecer una gran <span class="text-main">ambientacion</span>
+          contamos con divertidas actividades y dinamicas en las que puedes participar
+        </p>
+      </div>
+    </article>
+    <div
+      class="md:flex md:justify-center fade-in md:items-center py-8 px-4 md:w-6/12"
+    >
+      <img
+        class="rounded-2xl shadow-lg shadow-gray-400"
+        src="/public/restaurante.jpg"
+        alt=""
+      />
+    </div>
+  </section>
+  <section class="bg-red-600">
+    <div class="max-w-[1200px] w-[90%] mx-auto md:flex mb-8">
+      <div
+        class="md:flex md:justify-center fade-in md:items-center py-8 px-4 md:w-6/12"
+      >
+        <img class="rounded-2xl" src="/public/chefjapo.jpg" alt="" />
+      </div>
+
+      <div
+        class="flex flex-col text-start py-8 md:w-2/4 items-center justify-center fade-in"
+      >
+        <div class="md:max-w-xl px-6 flex flex-col gap-4 md:text-start">
+          <h2 class="text-3xl font-bold text-white">
+            Una experiencia autentica
+          </h2>
+          <p class="text-2xl text-white">
+            En Kioto-bar estamos comprometidos con brindar una experiencia
+            gastronomica autentica, por esa razón buena parte de nuestro equipo
+            de cocina esta compuesto por nativos y cocineros especializados en
+            cocina asiatica
+          </p>
         </div>
-        <div
-            class="md:flex md:justify-center fade-in md:items-center py-8 px-4 md:w-6/12"
-        >
-            <img
-                class="rounded-2xl shadow-lg shadow-gray-400"
-                src="/public/nagano-restaurante-japones.jpg"
-                alt=""
-            />
-        </div>
-    </section>
-    <section class="bg-red-600">
-        <div class="max-w-[1200px] w-[90%] mx-auto md:flex mb-8">
-            <div
-                class="hidden md:flex items-center justify-center fade-in p-4 md:w-2/4"
-            >
-                <img src="/public/foto2-removebg-preview.png" alt="" />
-            </div>
-            <div
-                class="flex flex-col text-start py-8 md:w-2/4 items-center justify-center fade-in"
-            >
-                <div class="md:max-w-xl px-6 flex flex-col gap-4 md:text-start">
-                    <h2 class="text-3xl font-bold text-white">
-                        Una experiencia autentica
-                    </h2>
-                    <p class="text-2xl text-white">
-                        En Kioto-bar estamos comprometidos con brindar una
-                        experiencia gastronomica autentica, por esa razon buena
-                        parte de nuestro equipo de cocina esta compuesto por
-                        nativos expertos
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+      </div>
+    </div>
+  </section>
 </Layout>
