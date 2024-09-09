@@ -1,4 +1,4 @@
-[![Acceder a Kioto-bar:](https://kiotobar.netlify.app/)
+
 
 # Astro Starter Kit: Basics
 
